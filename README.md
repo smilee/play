@@ -18,5 +18,5 @@ will clone git@github.com:smilee/subtreeDirectory.git into the 'subtreeDirectory
 
 ```
 git fetch subtreeDirectory main
-git subtree pull --prefix subtreeDirectory subtreeDirectory main
+git subtree pull --prefix subtreeDirectory subtreeDirectory main --squash
 ```
