@@ -1,0 +1,32 @@
+{
+  "name": "play",
+  "version": "1.0.0",
+  "description": "esbuild with React and TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild app.jsx --bundle --outfile=build/out.js",
+    "bundle:development": "esbuild app.jsx --bundle --sourcemap --target=chrome58,firefox57,safari11,edge16 --outfile=build/out.js",
+    "bundle:production": "esbuild app.jsx --bundle --minify --target=chrome58,firefox57,safari11,edge16 --outfile=build/out.js",
+    "tsc": "npx tsc",
+    "tsc:watch": "npx tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smilee/play.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smilee/play/issues"
+  },
+  "homepage": "https://github.com/smilee/play#readme",
+  "dependencies": {
+    "esbuild": "^0.15.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
